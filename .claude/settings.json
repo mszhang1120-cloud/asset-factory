@@ -3,11 +3,21 @@
     "PreToolUse": [
       {
         "matcher": "Edit|Write",
-        "scriptPath": "../scripts/hooks/tdd-guard.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $CLAUDE_PROJECT_DIR/scripts/hooks/tdd-guard.sh"
+          }
+        ]
       },
       {
         "matcher": "Shell",
-        "scriptPath": "../scripts/hooks/shell-guard.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $CLAUDE_PROJECT_DIR/scripts/hooks/shell-guard.sh"
+          }
+        ]
       },
       {
         "matcher": "Bash",
