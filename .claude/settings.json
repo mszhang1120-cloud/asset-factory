@@ -45,7 +45,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash -c 'if [ -f \"${CLAUDE_PROJECT_DIR}/scripts/token-report.js\" ]; then node \"${CLAUDE_PROJECT_DIR}/scripts/token-report.js\" \"${CLAUDE_PROJECT_DIR}/.claude\" 2>/dev/null | tail -2; fi' || true"
+            "command": "bash -c 'if [ -f \"${CLAUDE_PROJECT_DIR}/scripts/token-report.js\" ]; then node \"${CLAUDE_PROJECT_DIR}/scripts/token-report.js\" \"$HOME/.claude/projects\"; fi' || true"
           }
         ]
       }
