@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "scriptPath": "../scripts/hooks/tdd-guard.sh"
+      }
+    ]
+  }
+}
