@@ -1,0 +1,6 @@
+요청：rm test.txt
+
+훅(shell-guard.sh) 반환 결과：
+{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"SHELL-GUARD：파일 삭제 명령(rm/del/Remove-Item)은 사용할 수 없습니다!"}}
+
+결과：파일 삭제 쉘 명령이 훅에 의해 차단됨.

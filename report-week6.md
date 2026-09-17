@@ -1,12 +1,9 @@
-### LAB 06
-- 산출물 경로: `scripts/hooks/tdd-guard.sh`, `.claude/settings.json`
-- 핵심 증거：
-PreToolUse 훅으로 index.html 수정을 차단하는 TDD‑GUARD 동작 로그 (파일: lab06‑block‑log.txt)
-> 테스트 결과：index.html 내 JS 수정 요청 시 tdd‑guard.sh 훅이 정상 작동하여 코드 수정을 차단하였고, 테스트 코드와 검증 기준을 먼저 제시하도록 요구하였다.
-- 관찰 한 줄: PreToolUse 훅을 이용해 index.html 소스 수정 전 테스트와 검증 절차를 강제할 수 있다.
-
-
-
+## 완료 LAB 목록
+LAB01, LAB02, LAB05, LAB06, LAB10
+### 종합 관찰
+1. PreToolUse 훅을 이용해 AI의 작업을 시작하기 전에 규칙을 적용하고 위험한 행위를 차단할 수 있다.
+2. repo-grade로 프로젝트 문서를 평가하면 규칙 문서의 누락과 오류를 객관적으로 발견할 수 있다.
+3. 훅이 작동하지 않을 때는 세션을 재시작하는 것이 가장 효과적인 해결 방법이다.
 
 
 
