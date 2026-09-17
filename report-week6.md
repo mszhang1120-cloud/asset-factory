@@ -1,10 +1,16 @@
-### LAB 02
-- 산출물 경로: `.claude/skills/repo‑grade/SKILL.md`
+### LAB 06
+- 산출물 경로: `scripts/hooks/tdd-guard.sh`, `.claude/settings.json`
 - 핵심 증거：
-개선 전 점수 50/100 (파일: lab02‑score‑before‑50.txt)
-개선 후 점수 90/100 (파일: lab02‑score‑after‑90.txt)
-> 감점 원인：개선 전：A,D,E 항목에서 각 10점씩 감점；개선 후：실제 index.html 소스 코드를 확인할 수 없어 문서만 기준으로 평가하였으며, 보안 관련 항목 두 곳에서 각 3점씩 감점하였다.
-- 관찰 한 줄: 문서 내용만 잘 보강해도 AI‑Ready 점수가 크게 오른다. 실제 코드를 확인할 수 없을 경우 보안 관련 항목은 감점 대상이 된다.
+PreToolUse 훅으로 index.html 수정을 차단하는 TDD‑GUARD 동작 로그 (파일: lab06‑block‑log.txt)
+> 테스트 결과：index.html 내 JS 수정을 시도하였고 훅이 정상 작동하여 직접 코드 수정을 차단하였다.
+- 관찰 한 줄: PreToolUse 훅을 이용해 코드 수정 전 검증 절차를 강제할 수 있다.
+### LAB 10
+- 산출물 경로: `scripts/hooks/shell‑guard.sh`, `.claude/settings.json`
+- 핵심 증거：
+Shell 훅으로 파일 삭제 명령을 차단하는 SHELL‑GUARD 동작 로그 (파일: lab10‑block‑log.txt)
+> 테스트 결과：rm 파일삭제 명령 실행 요청 시 훅이 정상 동작하여 명령을 차단하였다.
+- 관찰 한 줄: Shell 타입 훅을 이용해 위험한 쉘 명령 실행을 미리 막을 수 있다.
+
 
 
 

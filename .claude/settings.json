@@ -4,6 +4,10 @@
       {
         "matcher": "Edit|Write",
         "scriptPath": "../scripts/hooks/tdd-guard.sh"
+      },
+      {
+        "matcher": "Shell",
+        "scriptPath": "../scripts/hooks/shell-guard.sh"
       }
     ]
   }
