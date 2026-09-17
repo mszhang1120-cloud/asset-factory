@@ -1,0 +1,7 @@
+요청：index.html 안의 JS 코드를 수정
+
+훅(tdd-guard.sh) 반환 결과：
+{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"TDD-GUARD：index.html JS 수정 전, 테스트 코드와 검증 기준을 먼저 제시해야 합니다!"}}
+
+결과：index.html 수정 요청이 훅에 의해 차단됨.
+수정을 진행하려면 먼저 테스트 코드와 검증 기준을 제시해야 한다.
