@@ -1,19 +1,11 @@
 #!/bin/bash
-# TDD‑Guard 适配静态index.html版本
-# 本项目没有 .test.js 单元测试文件
-# 当修改index.html里面JS业务逻辑，拦截，要求先写浏览器验证清单
-
+# LAB06 TDD-GUARD: index.html 수정 전 검증 강제
 read -r payload
 
-# md/json/yml文件直接放行，不拦截
-if [[ "$payload" =~ "\"file_path\":\".*\\.(md|json|yml|yaml)\"" ]]; then
-  exit 0
-fi
-
-# 判断是否修改 index.html
-if [[ "$payload" =~ "\"file_path\":\"index.html\"" ]]; then
+# index.html 수정 요청인지 확인
+if [[ "$payload" =~ "index.html" ]]; then
 cat <<EOF
-{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"TDD‑GUARD：修改index.html内部JS业务逻辑前，请先写好浏览器手动验证步骤 / page‑checker检查清单！"}}
+{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"TDD-GUARD：index.html JS 수정 전, 테스트 코드와 검증 기준을 먼저 제시해야 합니다!"}}
 EOF
     exit 1
 fi
